@@ -1,0 +1,176 @@
+
+
+
+
+
+
+
+
+
+.container {
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 10vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+.books-info-container {
+    padding-left: 1vw;
+    max-width: 20vw;
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-size: 15pt;
+    line-height: 1.5;
+}
+
+/* Style for the modal (the portrait thing) */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Style for the modal content (the image) */
+.modal-content {
+    display: none;
+    margin-left: 25%;
+    max-width: 50vw;
+    padding-bottom:30%;
+    justify-content: right;
+    align-items: center;
+}
+
+
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, ol, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a readable font for the body */
+body {
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+    font-size: 12pt;
+    line-height: 1.5;
+}
+
+/* Separate paragraphs visually */
+p {
+    margin-bottom: 1em;  
+}
+
+/* Set background image for the body */
+body {
+    background-image: url('BetaSymbol.jpg');
+    background-repeat: repeat;
+    font-family:Arial;
+}
+
+/* Style your name */
+.header h1 {
+    font-size: 5em;
+    text-decoration: underline;
+    margin-bottom: 20px;  
+    font-family: 'Roboto Mono', monospace;
+    float: center;
+}
+
+/* Style the portrait image */
+.image-container img {
+    float: center;
+    max-width: 30vw;
+    margin-right: 30px; 
+}
+
+/* Style headings */
+h2, h3 {
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 1.5em;  
+    margin-bottom: 0.5em;  
+}
+
+/* Style class schedule table */
+.class-schedule table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.class-schedule th, .class-schedule td {
+    padding: 8px;  
+    text-align: left;
+}
+
+.class-schedule th {
+    background-color: #ddd; /* Header background color */
+    border-bottom: 2px solid #bbb; /* Header bottom border color */
+}
+
+/* Alternating row colors for class schedule */
+.class-schedule tr:nth-child(even) {
+    background-color: #f2f2f2; /* Even row background color */
+}
+
+/* Set background color for each class schedule item */
+.bold-row {
+    background-color: #c2294279; /* Light pink */
+    border-bottom: 1;
+}
+
+.class-item1 {
+    background-color: #ffc0cb; /* Light pink */
+}
+
+.class-item2 {
+    background-color: #add8e6; /* Light blue */
+}
+
+.class-item3 {
+    background-color: #98fb98; /* Pale green */
+}
+
+.class-item4 {
+    background-color: rgb(238, 120, 199); /* Pale green */
+}
+
+.class-item5 {
+    background-color: rgb(224, 189, 155); /* Pale green */
+}
+
+.class-item6 {
+    background-color: rgb(214, 109, 91); /* Pale green */
+}
+
+/* Your footer styling */
+.footer {
+    background-color: rgba(114, 14, 14, 0.712);
+    color: rgb(46, 31, 30);
+}
+
+/* Optional: Add a subtle drop-shadow to your portrait */
+.image-container img {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Style links */
+a {
+    color: #007BFF; /* Blue color */
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<!-- HEADER/DISCLAIMER
+ 
+Project:  Project 1, About Me Webpage
+Name: Patrick Kunz
+Submitted: 9/1/23
+ 
+I declare that the following source code was written by me, or provided
+by the instructor for this project. I understand that copying source
+code from any other source, providing source code to another student, 
+or leaving my code on a public web site constitutes cheating.
+I acknowledge that if I am found in violation of this policy this may result
+in a zero grade, a permanent record on file and possibly immediate failure of the class.
+ 
+Reflection (1-2 paragraphs):  I really enjoyed writing this program, but had trouble with blah blah blah.  !!!!!! FIXME FIXME FIXME !!!!!!!
+
+I particularly loved discovering the <hr> code snippet. I don't know why, but it made me very happy to make that little line go across the screen.
+Another fun thing was playing with the RGBA slider in the footer color style element. It's neat!
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Patrick Kunz</title>
+    <link id="mainStylesheet" rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="portraitModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="enlargedPortrait">
+    </div>
+
+    <!-- <span class="close" onclick="closeModal()">&times;</span> -->
+
+    <div class="container">
+
+        <header class="header">
+            <h1>Patrick Kunz</h1>
+        </header>
+        <hr>
+
+        <div class="hero-wrapper">
+            <div class="image-container">
+                <img src="IMG_8058.jpeg" id="portraitImage">
+            </div>
+
+            <div class="books-info-container">
+                <section class="personal-info">
+                    <h2>Personal Info:</h2>
+                    <ul>
+                        <li><span class="bold-text">Major:</span> Computer Science</li>
+                        <li><span class="bold-text">High School:</span> Riverton High School, Riverton, Utah. 2019 baby.</li>
+                        <li><span class="bold-text">Current Year at UVU:</span> Junior (more or less)</li>
+                        <li><span class="bold-text">Favorite Ice Cream:</span> It's rude to choose favorite children. (I kinda love all of it.) </li>
+                    </ul>
+                </section>
+
+                <section class="favorite-books">
+                    <h2>Five Favorite Books:</h2>
+                    <ol>
+                        <li><span class="italic-text">Slathbog's Gold</span>, <a href="https://shadowmountain.com/author-book/m-l-forman/">M.L. Forman</a></li>
+                        <li><span class="italic-text">Maniac Magee</span>, <a href="http://jerryspinelliauthor.com/">Jerry Spinelli</a></li>
+                        <li><span class="italic-text">The Great Gatsby</span>, <a href="https://www.scott-fitzgerald.com/">F. Scott Fitzgerald</a></li>
+                        <li><span class="italic-text">Heroes of Olympus</span>, <a href="https://rickriordan.com/">Rick Riordan</a></li>
+                        <li><span class="italic-text">Michael Vey</span>, <a href="https://richardpaulevans.com/">Richard Paul Evans</a></li>
+                    </ol>
+                </section>
+            </div>
+        </div>
+
+        <section class="ai-poem">
+            <h2>An AI poem about AI Poems</h2>
+            <p>I've been fascinated by the AI discussion, as I'm sure many of you have. The most interesting poem I could think about was a<br>
+                poem written by an AI about AI writing poems. With some workshopping, I think it came out good.
+            </p>
+            <p>In lines of code, a question deep,<br>
+                AI generates thoughts, secrets to keep.<br>
+                Existence pondered in algorithms' flow,<br>
+                Poems of being, the AI may know.<br></p>
+        </section>
+
+        <section class="interests">
+            <h2>My Interests (Personally)</h2>
+            <p>
+                Interests for me are pretty broad. I often struggle to pick something to do because I wish I could do them all.<br>
+                That does, of course, mean I have a list of them which is reasonably long. The most prominent of these (in no particular order)<br>
+                are as follows: Dungeons & Dragons, playing guitar (electric and acoustic) in my band, digital media (pretty much anything<br>
+                Adobe), spending time with my wife and our families, PC gaming (when I find the time to), and many many other smaller interests.
+
+            </p>
+            <p>
+                This could get very long very fast, so I'll keep it brief by picking two of them to share some details. I spend most of my<br>
+                free time either playing D&D (Dungeons and Dragons) with my little brothers, and some close friends of ours. I am almost <br>
+                always the DM or Dungeon Master which I enjoy a lot. D&D is like a video game, but the computer it runs on is the DM's brain.<br>
+                It's my job to simulate the entire world which the characters inhabit, and render whatever choice they make. That means any <br>
+                possible choice they could make is on the table. This is why I love D&D. There are no walls you can't blow up. None of them.
+            </p>
+            <p>
+                If there's one more thing I spend time on consistently it's my band. It started a few years ago with some high school friends<br>
+                returning from missions. We started playing for fun, and we sucked really bad. We named ourselves Beta Mail, for many reasons, <br>
+                our lack of skill certainly being one. But also wanting to deliver meaning to the people. Eventually we actually got better, <br>
+                and we stuck with the name. We've had a bunch of concerts with great turnouts, and we're getting into some "battle of <br>
+                the bands" competitions this fall. We've got one song out on all the streaming services "See Me" with a killer <a
+                    href="https://www.youtube.com/watch?v=84PD4coCu04">LEGO music video</a>,<br>
+                and one more soon to release. We also have a concert coming up in October at Platinum Records on Provo center street. Feel free<br>
+                to check us out at <a href="https://www.instagram.com/beta.mail.band/">beta.mail.band</a> for show dates and song releases!
+            </p>
+
+        </section>
+
+        <section class="class-schedule">
+            <h2>Class Schedule</h2>
+
+            <table>
+                <tr class="bold-row" >
+                    <td></td>
+                    <td>Monday</td>
+                    <td>Tuesday</td>
+                    <td>Wednesday</td>
+                    <td>Thursday</td>
+                    <td>Friday</td>
+                </tr>
+
+                <tr>
+                    <td>10:00</td>
+                    <td class="class-item1" rowspan="3">Calculus</td>
+                    <td class="class-item1" rowspan="3">Calculus</td>
+                    <td class="class-item1" rowspan="3">Calculus</td>
+                    <td class="class-item1" rowspan="3">Calculus</td>
+                    <td rowspan="12" class="class-item5">Work</td>
+                </tr>
+
+                <tr>
+                    <td>10:30</td>
+                </tr>
+
+                <tr>
+                    <td>11:00</td>
+                </tr>
+
+                <tr>
+                    <td>11:30</td>
+                    <td>Food</td>
+                    <td>Food</td>
+                    <td>Food</td>
+                    <td>Food</td>
+                </tr>
+
+                <tr>
+                    <td>12:00</td>
+                    <td rowspan="8" class="class-item5">Homework</td>
+                    <td rowspan="3" class="class-item5">Homework</td>
+                    <td rowspan="2" class="class-item5">Homework</td>
+                    <td rowspan="3" class="class-item5">Homework</td>
+                </tr>
+
+                <tr>
+                    <td>12:30</td>
+                </tr>
+
+                <tr>
+                    <td>01:00</td>
+                    <td rowspan="6" class="class-item2">Biology Lab</td>
+                </tr>
+
+                <tr>
+                    <td>01:30</td>
+                    <td rowspan="3" class="class-item6">Computer<br>Networks</td>
+                    <td rowspan="3" class="class-item6">Computer<br>Networks</td>
+                </tr>
+
+                <tr>
+                    <td>02:00</td>
+                </tr>
+
+                <tr>
+                    <td>02:30</td>
+                </tr>
+
+                <tr>
+                    <td>03:00</td>
+                    <td rowspan="3" class="class-item3"> C++ <br>Prog.</td>
+                    <td rowspan="3" class="class-item3"> C++ <br>Prog.</td>
+                </tr>
+
+                <tr>
+                    <td>03:30</td>
+                </tr>
+
+                <tr>
+                    <td>04:00</td>
+                    <td rowspan="3" class="class-item2"> Biology </td>
+                    <td rowspan="3" class="class-item2"> Biology </td>
+                    <td rowspan="3" class="class-item2"> Biology </td>
+                </tr>
+
+                <tr>
+                    <td>04:30</td>
+                    <td rowspan="2"> Food </td>
+                    <td rowspan="2"> Food </td>
+                </tr>
+
+                <tr>
+                    <td>05:00</td>
+                </tr>
+
+                <tr>
+                    <td>05:30</td>
+                    <td rowspan="3" class="class-item4"> Web<br>Prog.</td>
+                    <td rowspan="5"> Band<br> Night</td>
+                    <td rowspan="3" class="class-item4"> Web<br>Prog.</td>
+                    <td rowspan="5"> Band<br> Night</td>
+                    <td rowspan="5" class="class-item5">Homework</td>
+
+                </tr>
+
+                <tr>
+                    <td>06:00</td>
+                </tr>
+
+                <tr>
+                    <td>06:30</td>
+                </tr>
+
+                <tr>
+                    <td>07:00</td>
+                    <td rowspan="2" class="class-item5">Homework</td>
+                    <td rowspan="2" class="class-item5">Homework</td>
+                </tr>
+
+                <tr>
+                    <td>07:30</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+        <footer class="footer" style="color:rgb(46, 31, 30);">
+            <h1> <br> </h1>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
